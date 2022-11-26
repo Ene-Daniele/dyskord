@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./icon-tray.component.css']
 })
 export class IconTrayComponent {
-
+  
 }

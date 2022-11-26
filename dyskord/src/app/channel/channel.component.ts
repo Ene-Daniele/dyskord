@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-channel',
@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./channel.component.css']
 })
 export class ChannelComponent {
-
+  @Input() text = "Default Name"
 }

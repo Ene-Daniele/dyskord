@@ -1,0 +1,64 @@
+img {
+    border-radius: 50px;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    position: relative;
+    left: -10px;
+}
+img:active {
+    transform: translateY(1.3px);
+}
+img:hover {
+    animation-duration: 0.5s;
+    animation-name: on-hover-enter;
+    border-radius: 15px;
+    animation-delay: -0.2s;
+}
+img:not(hover) {
+    animation-duration: 0.5s;
+    animation-name: on-hover-leave;
+}
+@keyframes on-hover-enter {
+    from {
+        border-radius: 50px;
+    }   
+    to {
+        border-radius: 15px;
+    }
+}
+@keyframes on-hover-leave {
+    from {
+        border-radius: 15px;
+    }   
+    to {
+        border-radius: 50px;
+    }
+}
+div {
+    display: flex;
+}
+#pad {
+    border: 5px solid white;
+    height: 10px;
+    border-radius: 50px;
+    position: relative;
+    left: -15px;
+    top: 25px;
+}
+@keyframes on-pad-enter {
+    from {
+        height: 10px;
+    }   
+    to {
+        height: 20px;
+    }
+}
+@keyframes on-pad-leave {
+    from {
+        height: 20px;
+    }   
+    to {
+        height: 10px;
+    }
+}

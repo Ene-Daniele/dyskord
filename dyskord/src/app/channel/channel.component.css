@@ -1,0 +1,10 @@
+p {
+    color: gray;
+    font-size: medium;
+    width: 240px;
+    height: 30px;
+    user-select: none;
+}
+p:hover {
+    color: white;
+}

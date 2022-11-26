@@ -22,7 +22,7 @@ import { ChannelComponent } from './channel/channel.component';
     ChannelTrayComponent,
     ChatComponent,
     UsersTrayComponent,
-    UserComponent,
+    UserComponent, 
     MessageComponent,
     CategoryComponent,
     ChannelComponent

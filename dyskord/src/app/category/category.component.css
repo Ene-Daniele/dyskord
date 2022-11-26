@@ -1,0 +1,23 @@
+button {
+    margin: 5px;
+    font-size: large;
+    text-align: left;
+    width: 240px;
+    margin-top: 10px;
+    position: relative;
+    left: -15px;
+    background-color: transparent;
+    border: 0px;
+    color: rgb(182, 182, 182);
+}
+button:hover {
+    background-color: transparent;
+    color: white;
+}
+button:active {
+    background-color: transparent;
+    border: 0px;
+}
+app-channel {
+    position: relative;
+}

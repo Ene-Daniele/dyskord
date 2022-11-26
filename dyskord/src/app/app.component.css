@@ -1,0 +1,12 @@
+#main-container {
+    border-radius: 10px;
+    width: 100%;
+    height: 95vh;
+    display: flex;
+}
+app-icon-tray {
+    width: 70px;
+}
+body {
+    height: 100%;
+}

@@ -1,5 +1,5 @@
 :root {
-    --background-body: #fff;
+    --background-body: #202225;
     --background: #efefef;
     --background-alt: #f7f7f7;
     --selection: #9e9e9e;
@@ -11,7 +11,7 @@
     --border: #dbdbdb;
     --code: #000;
     --animation-duration: 0.1s;
-    --button-hover: #ddd;
+    --variable-hover: #ddd;
     --scrollbar-thumb: rgb(213, 213, 213);
     --scrollbar-thumb-hover: rgb(196, 196, 196);
     --form-placeholder: #949494;
@@ -23,7 +23,7 @@
   
   @media (prefers-color-scheme: dark) {
   :root {
-    --background-body: #363940;
+    --background-body: #202225;
     --background: #2F3136;
     --background-alt: #000940;
     --selection: #7289DA;
@@ -35,8 +35,8 @@
     --border: #000000;
     --code: #FFFFFF;
     --animation-duration: 0.1s;
-    --button-hover: #324759;
-    --scrollbar-thumb: var(--button-hover);
+    --variable-hover: #324759;
+    --scrollbar-thumb: var(--variable-hover);
     --scrollbar-thumb-hover: rgb(20, 20, 20);
     --form-placeholder: #a9a9a9;
     --form-text: #fff;
@@ -203,7 +203,7 @@
     }
   }
   
-  button {
+  variable {
     transition:
       background-color 0.1s linear,
       border-color 0.1s linear,
@@ -220,7 +220,7 @@
   
   @media (prefers-color-scheme: dark) {
   
-    button {
+    variable {
     transition:
       background-color 0.1s linear,
       border-color 0.1s linear,
@@ -501,10 +501,10 @@
     }
   }
   
-  button,
+  variable,
   select,
   input[type='submit'],
-  input[type='button'],
+  input[type='variable'],
   input[type='checkbox'],
   input[type='range'],
   input[type='radio'] {
@@ -547,7 +547,7 @@
     }
   }
   
-  button {
+  variable {
     color: #000;
     color: var(--form-text);
     background-color: #efefef;
@@ -564,7 +564,7 @@
   
   @media (prefers-color-scheme: dark) {
   
-    button {
+    variable {
     background-color: #161f27;
     background-color: var(--background);
     }
@@ -572,7 +572,7 @@
   
   @media (prefers-color-scheme: dark) {
   
-    button {
+    variable {
     color: #fff;
     color: var(--form-text);
     }
@@ -663,7 +663,7 @@
   input:not([type='checkbox']):not([type='radio']),
   input[type='range'],
   select,
-  button,
+  variable,
   textarea {
     -webkit-appearance: none;
   }
@@ -732,49 +732,49 @@
     overflow-y: auto;
   }
   
-  button,
+  variable,
   input[type='submit'],
-  input[type='button'] {
+  input[type='variable'] {
     padding-right: 30px;
     padding-left: 30px;
   }
   
-  button:hover {
+  variable:hover {
     background: #ddd;
-    background: var(--button-hover);
+    background: var(--variable-hover);
   }
   
   @media (prefers-color-scheme: dark) {
   
-    button:hover {
+    variable:hover {
     background: #324759;
-    background: var(--button-hover);
+    background: var(--variable-hover);
     }
   }
   
   input[type='submit']:hover {
     background: #ddd;
-    background: var(--button-hover);
+    background: var(--variable-hover);
   }
   
   @media (prefers-color-scheme: dark) {
   
     input[type='submit']:hover {
     background: #324759;
-    background: var(--button-hover);
+    background: var(--variable-hover);
     }
   }
   
-  input[type='button']:hover {
+  input[type='variable']:hover {
     background: #ddd;
-    background: var(--button-hover);
+    background: var(--variable-hover);
   }
   
   @media (prefers-color-scheme: dark) {
   
-    input[type='button']:hover {
+    input[type='variable']:hover {
     background: #324759;
-    background: var(--button-hover);
+    background: var(--variable-hover);
     }
   }
   
@@ -804,14 +804,14 @@
     }
   }
   
-  button:focus {
+  variable:focus {
     box-shadow: 0 0 0 2px #0096bfab;
     box-shadow: 0 0 0 2px var(--focus);
   }
   
   @media (prefers-color-scheme: dark) {
   
-    button:focus {
+    variable:focus {
     box-shadow: 0 0 0 2px #0096bfab;
     box-shadow: 0 0 0 2px var(--focus);
     }
@@ -833,15 +833,15 @@
   input[type='checkbox']:active,
   input[type='radio']:active,
   input[type='submit']:active,
-  input[type='button']:active,
+  input[type='variable']:active,
   input[type='range']:active,
-  button:active {
+  variable:active {
     transform: translateY(2px);
   }
   
   input:disabled,
   select:disabled,
-  button:disabled,
+  variable:disabled,
   textarea:disabled {
     cursor: not-allowed;
     opacity: 0.5;
@@ -1522,13 +1522,13 @@
     code,
     summary,
     details,
-    button,
+    variable,
     input,
     textarea {
       background-color: #fff;
     }
   
-    button,
+    variable,
     input,
     textarea {
       border: 1px solid #000;
@@ -1543,7 +1543,7 @@
     h6,
     pre,
     code,
-    button,
+    variable,
     input,
     textarea,
     footer,
@@ -1571,13 +1571,13 @@
    
   }
   
-   button {
+   variable {
      background-color:#23272A!important;
      color:#fff!important;
      border-radius:60px !important
     }
     
-    button:hover{
+    variable:hover{
       background-color: #36393F !important;
       color: #7289da !important;
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19)!important

@@ -1,0 +1,83 @@
+button {
+    font-size: medium;
+    font-weight: bold;
+    width: 240px;
+    background-color: #2d2f34;
+    border-radius: 0%;
+    border-top-left-radius: 10px;
+    height: 40px;
+    border-style: none;
+    border: none;
+    box-shadow: 0px 5px 5px -4px black;
+}
+button:hover {
+    animation-duration: 0.2s;
+    animation-name: on-hover-enter;
+    background-color: #3c3f45;
+}
+button:not(hover) {
+    animation-duration: 0.2s;
+    animation-name: on-hover-leave;
+}
+@keyframes on-hover-enter {
+    from {
+        background-color: #2d2f34;
+    } to {
+        background-color: #3c3f45;
+    }
+}
+@keyframes on-hover-leave {
+    from {
+        background-color: #3c3f45;
+    } to {
+        background-color: #2d2f34;
+    }
+}
+li {
+    width: 220px;
+    border-radius: 5px;
+    max-width: 210px;
+    display: flex;
+}
+.pls {
+    color: gray;
+    margin: 5px;
+    height: 40px;
+    border-radius: 5px;
+    min-width: 200px;
+}
+.pls:hover {
+    color: white;
+    background-color: #4752c4;
+}
+.divider {
+    background-color: rgb(65, 65, 65);
+    width: 180px;
+    position: relative;
+    left: 15px;
+}
+.ex {
+    color: red;
+}
+a {
+    color: white;
+}
+ul {
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #18191c;
+    border-radius: 10px;
+}
+img {
+    position: relative;
+    top: 10px;
+    left: -45px;
+    width: 20px; height: 20px;
+}
+#category-tray {
+    width: 240px; 
+    background-color: #2f3136;
+    height: 100%;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
