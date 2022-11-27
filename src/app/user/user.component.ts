@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent {
-
+  @Input() name = "Default User"
+  @Input() pic = "assets/icons/amongus.png"
+  @Input() status = "Empty status"
 }

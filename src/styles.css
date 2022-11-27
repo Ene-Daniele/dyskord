@@ -35,7 +35,7 @@
     --border: #000000;
     --code: #FFFFFF;
     --animation-duration: 0.1s;
-    --variable-hover: #324759;
+    --variable-hover: #202225;
     --scrollbar-thumb: var(--variable-hover);
     --scrollbar-thumb-hover: rgb(20, 20, 20);
     --form-placeholder: #a9a9a9;
@@ -47,7 +47,7 @@
   }
   
   html {
-    scrollbar-color: rgb(213, 213, 213) #fff;
+    scrollbar-color: #202225 #fff;
     scrollbar-color: var(--scrollbar-thumb) var(--background-body);
     scrollbar-width: thin;
   }
@@ -55,7 +55,7 @@
   @media (prefers-color-scheme: dark) {
   
     html {
-    scrollbar-color: #324759 #202b38;
+    scrollbar-color: #202225 #202225;
     scrollbar-color: var(--scrollbar-thumb) var(--background-body);
     }
   }
@@ -63,7 +63,7 @@
   @media (prefers-color-scheme: dark) {
   
     html {
-    scrollbar-color: #324759 #202b38;
+    scrollbar-color: #202225 #202225;
     scrollbar-color: var(--scrollbar-thumb) var(--background-body);
     }
   }
@@ -71,7 +71,7 @@
   @media (prefers-color-scheme: dark) {
   
     html {
-    scrollbar-color: #324759 #202b38;
+    scrollbar-color: #202225 #202225;
     scrollbar-color: var(--scrollbar-thumb) var(--background-body);
     }
   }
@@ -79,7 +79,7 @@
   @media (prefers-color-scheme: dark) {
   
     html {
-    scrollbar-color: #324759 #202b38;
+    scrollbar-color: #202225 #202225;
     scrollbar-color: var(--scrollbar-thumb) var(--background-body);
     }
   }
@@ -87,7 +87,7 @@
   @media (prefers-color-scheme: dark) {
   
     html {
-    scrollbar-color: #324759 #202b38;
+    scrollbar-color: #202225 #202225;
     scrollbar-color: var(--scrollbar-thumb) var(--background-body);
     }
   }
@@ -95,7 +95,7 @@
   @media (prefers-color-scheme: dark) {
   
     html {
-    scrollbar-color: #324759 #202b38;
+    scrollbar-color: #202225 #202225;
     scrollbar-color: var(--scrollbar-thumb) var(--background-body);
     }
   }

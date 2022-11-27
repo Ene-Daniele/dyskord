@@ -19,17 +19,22 @@ p {
 #chat-container {
     text-align: center;
     align-items: center;
+    position: fixed;
+}
+pre {
+    scrollbar-track-color: #202225;
+    scrollbar-face-color: #202225;
+    height: 86vh;
+    background-color: #36393f;
+    border: 1px solid rgb(51, 51, 51);
 }
 #chatbox {
     border-radius: 10px;
+    margin: 20px;
+    width: 1260px;
     height: 50px;
-    width: 201.5%;
     position: relative;
-    left: -320px;
+    top: 850px;
+    position: fixed;
     background-color: #40444b;
 }
-.center {
-    margin: auto;
-    width: 50%;
-    padding: 10px;
-  }

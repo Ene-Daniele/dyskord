@@ -9,6 +9,16 @@ img {
 img:active {
     transform: translateY(1.3px);
 }
+img:focus {
+    animation-duration: 0.5s;
+    animation-name: on-hover-enter;
+    border-radius: 15px;
+    animation-delay: -0.2s;
+}
+img:not(focus) {
+    animation-duration: 0.5s;
+    animation-name: on-hover-leave;
+}
 img:hover {
     animation-duration: 0.5s;
     animation-name: on-hover-enter;

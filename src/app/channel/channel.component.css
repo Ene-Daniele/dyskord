@@ -1,10 +1,25 @@
-p {
+button {
+    background-color: transparent;
+    border: 0px;
+    text-align: left;
     color: gray;
     font-size: medium;
-    width: 240px;
+    width: 190px;
     height: 30px;
     user-select: none;
+    border-radius: 5px;
+    padding-left: 5px;
 }
-p:hover {
+button:hover {
     color: white;
+}
+button:focus {
+    color: white;
+    background-color: rgb(66, 66, 66);
+}
+button:active {
+    background-color: rgb(66, 66, 66);
+}
+div {
+    margin-top: 5px;
 }
