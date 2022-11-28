@@ -22,6 +22,7 @@ p {
     position: fixed;
 }
 pre {
+    overflow-x: none;
     scrollbar-track-color: #202225;
     scrollbar-face-color: #202225;
     height: 86vh;

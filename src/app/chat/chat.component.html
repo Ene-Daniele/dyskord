@@ -1,35 +1,14 @@
 <section>
     <div id="xd" style="display: flex;">
         <img src="assets/h.png" style="width: 30px; height: 30px;" alt="">
-        <p>Torment</p>
+        <p style="color: white">Torment</p>
     </div>
     <div class="">
         <input id="chatbox" type="text">
     </div>
-    <pre>
-        <app-message class="messager" pfp="assets/icons/amongus.png" username="romeo" message='it s so pointless though rbo ltierally 99% of the time they go like "no i cant eat that it goes ove rthe 4 calories per hour htat im allowed to cosnume"
-        '></app-message>
-        <app-message class="messager" pfp="assets/icons/prism.png" username="xd" message='one of the nmoments ever'></app-message>
-        <app-message class="messager" pfp="assets/icons/skull.png" username="asd" message='DUDE'></app-message>
-        <app-message class="messager" pfp="assets/icons/amongus.png" username="romeo" message='it s so pointless though rbo ltierally 99% of the time they go like "no i cant eat that it goes ove rthe 4 calories per hour htat im allowed to cosnume"
-        '></app-message>
-        <app-message class="messager" pfp="assets/icons/prism.png" username="xd" message='one of the nmoments ever'></app-message>
-        <app-message class="messager" pfp="assets/icons/skull.png" username="asd" message='DUDE'></app-message>
-        <app-message class="messager" pfp="assets/icons/amongus.png" username="romeo" message='it s so pointless though rbo ltierally 99% of the time they go like "no i cant eat that it goes ove rthe 4 calories per hour htat im allowed to cosnume"
-        '></app-message>
-        <app-message class="messager" pfp="assets/icons/prism.png" username="xd" message='one of the nmoments ever'></app-message>
-        <app-message class="messager" pfp="assets/icons/skull.png" username="asd" message='DUDE'></app-message>
-        <app-message class="messager" pfp="assets/icons/amongus.png" username="romeo" message='it s so pointless though rbo ltierally 99% of the time they go like "no i cant eat that it goes ove rthe 4 calories per hour htat im allowed to cosnume"
-        '></app-message>
-        <app-message class="messager" pfp="assets/icons/prism.png" username="xd" message='one of the nmoments ever'></app-message>
-        <app-message class="messager" pfp="assets/icons/skull.png" username="asd" message='DUDE'></app-message>
-        <app-message class="messager" pfp="assets/icons/amongus.png" username="romeo" message='it s so pointless though rbo ltierally 99% of the time they go like "no i cant eat that it goes ove rthe 4 calories per hour htat im allowed to cosnume"
-        '></app-message>
-        <app-message class="messager" pfp="assets/icons/prism.png" username="xd" message='one of the nmoments ever'></app-message>
-        <app-message class="messager" pfp="assets/icons/skull.png" username="asd" message='DUDE'></app-message>
-        <app-message class="messager" pfp="assets/icons/amongus.png" username="romeo" message='it s so pointless though rbo ltierally 99% of the time they go like "no i cant eat that it goes ove rthe 4 calories per hour htat im allowed to cosnume"
-        '></app-message>
-        <app-message class="messager" pfp="assets/icons/prism.png" username="xd" message='one of the nmoments ever'></app-message>
-        <app-message class="messager" pfp="assets/icons/skull.png" username="asd" message='DUDE'></app-message>
+    <pre id="scroller">
+
+        <app-message *ngFor = 'let m of messageList' class="messager" [message]='m'></app-message>
+        
     </pre>
 </section>
